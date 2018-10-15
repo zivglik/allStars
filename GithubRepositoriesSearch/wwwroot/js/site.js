@@ -2,10 +2,10 @@
 myApp.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "http://localhost:25912/index.html"
+            templateUrl: "index.html"
         })
         .when("/bookmark", {
-            templateUrl: "http://localhost:25912/bookmark.html"
+            templateUrl: "bookmark.html"
         })
        
 });
