@@ -26,7 +26,7 @@ myApp.directive("repositoriesSearchResult", ['$http', function ($http) {
                         }
                     }
            
-                    $http.post('http://localhost:25912/SessionKeys/AddBookMarkGithubRepository', data, config)
+                    $http.post('SessionKeys/AddBookMarkGithubRepository', data, config)
                         .success(function (data, status, headers, config) {
                             $scope.PostDataResponse = data;
                         })
@@ -70,7 +70,7 @@ myApp.controller("mainCtrl",function($scope,$http){
 
     $scope.GetBookMarkGithubRepository = function (event) {
 
-        $http.get("http://localhost:25912/SessionKeys/GetBookMarkGithubRepository").then(function (response) {
+        $http.get("SessionKeys/GetBookMarkGithubRepository").then(function (response) {
             
             $scope.arrBookMarkGithubRepositories = response.data;
         });
