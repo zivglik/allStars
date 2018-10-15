@@ -1,0 +1,12 @@
+<div ng-controller="mainCtrl" data-ng-init="GetBookMarkGithubRepository()" class="github-repositories-search">
+    <h3>Bookmark Repositories </h3>
+
+    <ul class="list-inline row text-center text-lg-left">
+        <li class="list-inline-item col-lg-3 col-md-4 col-xs-6" ng-repeat="item in arrBookMarkGithubRepositories">
+            <div  repositories-search-result repositories-search-object="item" is-show-bookmark-btn="false"></div>
+        </li>
+    </ul>
+
+  
+
+</div>

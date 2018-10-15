@@ -1,0 +1,13 @@
+
+
+<img  class="img-fluid img-thumbnail avatar-url" ng-if="repositoriesSearchObject.owner.avatar_url" src={{repositoriesSearchObject.owner.avatar_url}} />
+<img  class="img-fluid img-thumbnail avatar-url" ng-if="repositoriesSearchObject.avatar_url" src={{repositoriesSearchObject.avatar_url}} />
+<div id="{{repositoriesSearchObject.id}}">{{repositoriesSearchObject.name}}</div>
+
+<button ng-show="isShowBookmarkBtn" class="bookmark" ng-click="addToBookmark(repositoriesSearchObject.id,repositoriesSearchObject.name,repositoriesSearchObject.owner.avatar_url)">
+    <span class="glyphicon glyphicon-bookmark "></span>
+</button>
+
+
+
+
